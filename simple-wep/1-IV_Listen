@@ -1,0 +1,15 @@
+#!/bin/sh
+
+source ./config
+
+# get into monitor mode!
+ifconfig $interface down
+iwconfig $interface mode monitor
+iwconfig $interface channel $channel
+ifconfig $interface up
+
+# -9, Injection test (look at that satisfying text fly by !)
+aireplay-ng -9 -e $essid -a $bssid $interface
+
+# get ready to capture those yummy IVs !
+airodump-ng -c $channel --bssid $bssid -w cap/dump $interface

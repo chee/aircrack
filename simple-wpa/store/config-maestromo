@@ -1,0 +1,17 @@
+# the card you are using
+interface=wlan0
+
+# the mac of your card
+mac='10:40:f3:7f:c9:3e'
+
+# the bssid of the network you are testing
+bssid='C0:3F:0E:74:A0:5D'
+
+# the essid of the network you are testing
+essid='MaestroMo-PC-Wireless'
+
+# the typical channel the network you are testing is utilising
+channel=1
+
+# client ( you can get this from 1-handshake's output ! )
+client='64:20:0C:9E:87:52'

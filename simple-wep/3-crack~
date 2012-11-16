@@ -1,0 +1,8 @@
+#!/bin/sh
+source ./config
+aircrack-ng -b $bssid cap/dump-??.cap
+
+# back to normal
+ifconfig $interface down
+iwconfig $interface mode managed
+ifconfig $interface up

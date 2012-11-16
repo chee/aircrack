@@ -1,0 +1,14 @@
+# the card you are using
+interface=wlan0
+
+# the mac of your card
+mac='10:40:f3:7f:c9:3e'
+
+# the bssid of the network you are testing
+bssid='00:1A:C4:93:D0:E9'
+
+# the essid of the network you are testing
+essid='2WIRE728'
+
+# the typical channel the network you are testing is utilising
+channel=6

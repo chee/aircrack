@@ -1,0 +1,14 @@
+Simple WEP tester
+-----------------
+
+Relies on Aircrack. Edit the config file to reflect your setup.
+
+INTERFACE -> the interface you are using ( e.g. wlan0 )
+MYMAC     -> your interface's mac address
+BSSID     -> the target AP's mac
+ESSID     -> the target AP's name
+CHANNEL   -> the channel the target AP is on
+
+then open three console windows and run the scripts in one each, in order of their prefixed digit.
+
+yay

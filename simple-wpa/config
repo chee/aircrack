@@ -1,0 +1,17 @@
+# the card you are using
+interface=wlan0
+
+# the mac of your card
+mac='10:40:f3:7f:c9:3e'
+
+# the bssid of the network you are testing
+bssid='5C:D9:98:68:9D:58'
+
+# the essid of the network you are testing
+essid='StaciandEric'
+
+# the typical channel the network you are testing is utilising
+channel=5
+
+# client ( you can get this from 1-handshake's output ! )
+client='00:83:93:E7:1F:5A'

